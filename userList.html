@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registered Users</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <h1>Registered Users</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>User ID</th>
+      </tr>
+    </thead>
+    <tbody id="userTable">
+      <!-- User data will be dynamically inserted here -->
+    </tbody>
+  </table>
+
+  <!-- Firebase config and user list logic -->
+  <script type="module" src="js/firebaseconfiguration.js"></script>
+  <script type="module" src="js/userList.js"></script>
+</body>
+</html>
